@@ -3,80 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre del Restaurante</title>
+    <title>Restaurante y Cevichería La 30</title>
+
+    <!-- Estilos CSS -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #F5F5DC; /* Cambia el color de fondo del cuerpo */
         }
 
         header {
-            background-color: #333;
+            background-color: #000000; /* Cambia el color de fondo del encabezado */
             color: #fff;
             text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
+            padding: 10px;
+            
         }
 
         section {
-            padding: 2em;
+            background-color: #fff; /* Cambia el color de fondo de las secciones */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px; /* Añade esquinas redondeadas para suavizar el diseño */
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+        /* Puedes agregar más estilos según sea necesario */
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Nombre del Restaurante</h1>
+        <img src="data:image/png;base64,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" alt="Logo del restaurante" />
+        <h1></h1>
     </header>
+    
 
-    <nav>
-        <a href="#inicio">Inicio</a> |
-        <a href="#menu">Menú</a> |
-        <a href="#reservas">Reservas</a> |
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <section id="inicio">
-        <h2>Bienvenido a nuestro restaurante</h2>
-        <p>Texto introductorio sobre el restaurante.</p>
+    <section>
+        <h2>¡Ven a Visitarnos!</h2>
+        <p><strong>Dirección:</strong> Carrera 30A #14-17, Bombona</p>
+        <p><strong>Número de Contacto:</strong> 350 816 5389</p>
     </section>
 
-    <section id="menu">
+    <section>
+        <h2>Síguenos en Redes Sociales:</h2>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/cevicheriala30_co" target="_blank">@cevicheriala30_co</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/cevicheriala30" target="_blank">Cevichería La 30</a></p>
+    </section>
+
+    <section>
+        <h2>Historia del Restaurante</h2>
+        <p>Descubre la historia única de nuestro restaurante y cómo hemos llegado a ser lo que somos hoy.</p>
+    </section>
+
+    <section>
         <h2>Menú</h2>
-        <p>Descripción de los platos y bebidas que ofrecemos.</p>
+        <!-- Aquí puedes incluir la lista de platos -->
+        <p>Consulta nuestro delicioso menú para descubrir una experiencia culinaria única.</p>
     </section>
 
-    <section id="reservas">
-        <h2>Reservas</h2>
-        <p>Información sobre cómo realizar reservas.</p>
+    <section>
+        <h2>Galería de Imágenes</h2>
+        <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.restaurantguru.com%2Fr65e-menu-Restaurante-y-Cevicheria-La-30.jpg&tbnid=YEx_goJzGaeFGM&vet=12ahUKEwiQ2s6LgbODAxUYoIkEHVEKC_cQMygIegQIARBW..i&imgrefurl=https%3A%2F%2Fes.restaurantguru.com%2FSevicheria-La-30-Pasto%2Fmenu&docid=3FWrgPEhYV3mqM&w=536&h=536&q=restaurante%20y%20cevicheria%20la%2030&ved=2ahUKEwiQ2s6LgbODAxUYoIkEHVEKC_cQMygIegQIARBW -->
+        <p>Explora nuestra galería para conocer visualmente lo que ofrecemos.</p>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Información de contacto del restaurante.</p>
+    <section>
+        <h2>Opiniones</h2>
+        <!-- Aquí puedes incluir citas breves de clientes satisfechos o enlaces a reseñas en línea -->
+        <p>Descubre lo que dicen nuestros clientes sobre su experiencia en nuestro restaurante.</p>
     </section>
-
-    <footer>
-        <p>&copy; 2023 Nombre del Restaurante. Todos los derechos reservados.</p>
-    </footer>
 
 </body>
 </html>
